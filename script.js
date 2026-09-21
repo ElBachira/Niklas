@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // =================================================================
     const songs = [
         {
-            title: "Golden Brown x Love Story",
-            artist: "Staykul25",
+            title: "Love is in the Air",
+            artist: "Rock Burwell",
             src: "song.mp3",
             lyrics: 
 [
