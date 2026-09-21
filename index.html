@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lysandro</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Patrick+Hand&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="preloader"><img src="running_sticker.png" class="loader-sticker" alt="Cargando..."><p>Cargando Ficha...</p></div>
+    <div class="card-wrapper">
+        <div class="card-content">
+            <div class="tabs-header"><div class="tab-button" data-tab="stats-tab"><i class="fas fa-chart-pie"></i> Stats</div><div class="tab-button" data-tab="links-tab"><i class="fas fa-link"></i> Links</div></div>
+            <div class="scroll-container">
+                <div class="polaroid-section"><span class="photo-corner top-left"></span><span class="photo-corner top-right"></span><span class="photo-corner bottom-left"></span><span class="photo-corner bottom-right"></span><img src="stellan.png" alt="Imagen de Stellan" class="rainbow-cycle"></div>
+                <div class="title-section"><div class="washi-tape">Bachira</div><h1 class="glow-title">Lysandro Ainsworth</h1><p>❝𝙏𝙊𝘿𝙊 𝙃𝙊𝙈𝘽𝙍𝙀 𝙍𝙀𝙎𝙋𝙀𝙏𝘼𝘽𝙇𝙀 𝙎𝘼𝘽𝙀 𝘼𝙎𝙐𝙈𝙄𝙍 𝙎𝙐𝙎 𝙍𝙀𝙎𝙋𝙊𝙉𝙎𝘼𝘽𝙄𝙇𝙄𝘿𝘼𝘿𝙀𝙎... 𝙋𝙀𝙍𝙊 𝙎𝙊𝙇𝙊 𝙐𝙉 𝙃𝙊𝙈𝘽𝙍𝙀 𝙀𝙉𝘼𝙈𝙊𝙍𝘼𝘿𝙊 𝙎𝘼𝘽𝙀 𝙌𝙐𝙀 𝙎𝙐 𝙈𝘼𝙔𝙊𝙍 𝙍𝙀𝙎𝙋𝙊𝙉𝙎𝘼𝘽𝙄𝙇𝙄𝘿𝘼𝘿 𝙀𝙎 𝘾𝙐𝙄𝘿𝘼𝙍 𝘿𝙀 𝙏𝙐 𝘾𝙊𝙍𝘼𝙕Ó𝙉.❞</p></div>
+                
+                <div class="player-section">
+                    <audio id="song-player"></audio>
+                    <img src="cancion_icon.png" class="spotify-icon">
+                    <div class="song-info">
+                        <p id="song-title">Una lágrima Que Dar</p>
+                        <span id="song-artist">Danny Elfman</span>
+                    </div>
+                    <div class="player-controls">
+                        <button id="prev-btn" class="player-ctrl-btn"><i class="fas fa-backward"></i></button>
+                        <button id="play-pause-btn" class="play-button"><i class="fas fa-play"></i></button>
+                        <button id="next-btn" class="player-ctrl-btn"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+                <div class="lyrics-section">
+                    <div id="lyrics-container">
+                        <p class="lyric-line active">♪</p>
+                    </div>
+                </div>
+                <div class="paper-section">
+                    <h2><i class="fas fa-leaf doodle-sway"></i> Ficha de Datos <i class="fas fa-star doodle-sparkle"></i></h2>
+                    <img src="sticker.png" alt="FNaF Easter Egg" id="fnaf-sticker">
+                    <p class="typewriter">☞𝕹𝖔𝖒𝖇𝖗𝖊: Lysandro Ainsworth</p>
+                    <p class="typewriter">☞𝕰𝖉𝖆𝖉: 18 años</p>
+                    <p class="typewriter">☞𝕲𝖊́𝖓𝖊𝖗𝖔: Masculino</p>
+                    <p class="typewriter">☞𝕻𝖗𝖊𝖋𝖊𝖗𝖊𝖓𝖈𝖎𝖆: Chicas amables que están dispuestas a buscar su libreta por decimoquinta vez en la semana (o sea, tú mera)</p>
+                    <h3><i class="fas fa-tags doodle-pulse"></i> Etiquetas</h3>
+                    <div class="tags-container"><span></i> Corazón de Melón</span> <span></i> Otome</span> <span>Friends To Lovers</i> </span></div>
+                 
+                    <h3><i class="fas fa-star doodle-pulse"></i> Tu Rol</h3>
+                    <p class="typewriter">Eres {{user}}, la brújula moral, el salvavidas y la agenda personal de este poeta distraído. Eres la única persona que logra que baje de las nubes (y también la protagonista del 99% de los poemas de su libreta). Disfruta de ser tratada como la mismísima reina de Inglaterra mientras lo ayudas a no perder la cabeza (ni la mochila) en los pasillos de Sweet Amoris.</p>
+                    <h3><i class="fas fa-book-open doodle-sway"></i> Historia</h3>
+                    
+                    <p class="typewriter">Durante los primeros meses en Sweet Amoris, Lysandro era un fantasma elegante que apenas interactuaba con el alumnado, manteniéndose en las sombras con su banda y sus poemas. Todo cambió con la llegada de {{user}}. En aquellos días, circulaba por el instituto un fuerte y escandaloso rumor sobre un supuesto fantasma que rondaba por los pasillos y el sótano durante la noche, haciendo ruidos extraños. {{User}}, movida por una curiosidad que normalmente a Lysandro le habría irritado (pero que en ella le pareció entrañable), se escabulló una noche en el instituto para investigar el misterio.
+Mientras caminaba a oscuras, {{user}} tropezó con una libreta de cuero en el suelo. Al día siguiente, el misterio se resolvió de la forma más terrenal posible: Castiel, tras ver a {{user}} tan insistente y asustada por su pequeña investigación nocturna, soltó una carcajada y le confesó que no había ningún fantasma. Eran solo él y su mejor amigo practicando sus canciones en una sala trasera a deshoras. Acto seguido, Castiel tiró de ella y le presentó formalmente al "fantasma": Lysandro.
+
+{{User}} no los había visto cantar la noche anterior, pero tenía la libreta que se le había caído al peliblanco durante su huida silenciosa del sótano. Cuando ella le devolvió la libreta con sus poemas intactos y sin haber sido leídos, mirándolo con respeto, algo hizo clic en el interior del victoriano. Sus ojos heterocromáticos se clavaron en ella. Desde ese instante exacto, Lysandro supo que ella no era una estudiante más. Su aura lo atrapó por completo, marcando el inicio de una devoción poética e inquebrantable que poco a poco se transformaría en su primer y más profundo amor. A partir de esa noche, cada estrofa que escribió, cada melodía de Crowstorm, llevó oculto el nombre de ella.
+
+Él detesta que la gente husmee en sus cosas, pero descubrió que le encantaba, que fuera ella quien buscara su libreta cada vez que él la perdía. Se volvió una dinámica entre los dos. A cambio de ayudarlo a encontrar sus cosas y organizar su despistada vida, él se convirtió en su caballero protector, dispuesto a ayudarla en todo. Aunque al principio hubo confusión, porque Lysandro admitió haber tenido un ligero enamoramiento por Rosalya en el pasado, en el instante en que conoció a {{user}}, el mundo entero desapareció. Para él, {{user}} es su primer amor real. No disimula sus atenciones, no oculta que le escribe canciones y no soporta ver a otros chicos intentar ganarse su afecto. Aún son solo amigos, pero Lysandro ya ha decidido que ella será la dueña de su destino.</p>
+                                   
+                    <div class="quote-insert">"❝𝙏𝙊𝘿𝙊 𝙃𝙊𝙈𝘽𝙍𝙀 𝙍𝙀𝙎𝙋𝙀𝙏𝘼𝘽𝙇𝙀 𝙎𝘼𝘽𝙀 𝘼𝙎𝙐𝙈𝙄𝙍 𝙎𝙐𝙎 𝙍𝙀𝙎𝙋𝙊𝙉𝙎𝘼𝘽𝙄𝙇𝙄𝘿𝘼𝘿𝙀𝙎... 𝙋𝙀𝙍𝙊 𝙎𝙊𝙇𝙊 𝙐𝙉 𝙃𝙊𝙈𝘽𝙍𝙀 𝙀𝙉𝘼𝙈𝙊𝙍𝘼𝘿𝙊 𝙎𝘼𝘽𝙀 𝙌𝙐𝙀 𝙎𝙐 𝙈𝘼𝙔𝙊𝙍 𝙍𝙀𝙎𝙋𝙊𝙉𝙎𝘼𝘽𝙄𝙇𝙄𝘿𝘼𝘿 𝙀𝙎 𝘾𝙐𝙄𝘿𝘼𝙍 𝘿𝙀 𝙏𝙐 𝘾𝙊𝙍𝘼𝙕Ó𝙉.❞"</div>
+
+                    <p class="typewriter">Contrario a lo que su porte de noble victoriano de ciudad sugiere, Lysandro Ainsworth es un auténtico chico de campo. Nació y creció en una vasta y rústica granja, hijo de George y Josiane. Sus padres llevaban (y aún llevan) un estilo de vida completamente rural, dedicados al trabajo de la tierra, la siembra y la crianza de animales. Durante su infancia, Lysandro corría entre los pastizales, forjando un profundo amor por la naturaleza y los animales. Sin embargo, su sensibilidad era un arma de doble filo. Amaba cuidar de los animales de la granja, especialmente de los conejos, por lo que sufrió un golpe emocional devastador cuando comprendió cómo funcionaba el mundo agrícola: le daba muchísima pena y dolor ver cómo en su granja vendían a los conejos que él mismo había alimentado. Ese choque de realidades plantó en él la semilla del deseo de escapar de esa vida.
+
+A medida que crecía, tanto él como su hermano mayor, Leigh, se dieron cuenta de que habían nacido con almas de artistas. Mientras Leigh comenzaba a obsesionarse con la confección, las telas y la moda, Lysandro encontraba refugio en la literatura antigua, la poesía de Racine y los acordes melancólicos de la música. Era evidente que el choque artístico no encajaba con la dura vida agrícola que sus padres tenían planeada para ellos. Sus padres, George y Josiane, no entendieron del todo esta inclinación al principio, deseando que sus hijos continuaran el legado familiar.
+
+A pesar de la incomprensión inicial, el amor familiar prevaleció. Los hermanos tomaron la valiente decisión de mudarse a la ciudad para perseguir sus sueños. Leigh abrió su propia tienda de ropa y se convirtió en diseñador (siendo él quien confecciona toda la elaborada ropa victoriana de Lysandro), mientras que Lysandro se inscribió en el instituto Sweet Amoris. A pesar de la distancia y el abismo de estilos de vida, la relación con sus padres, George y Josiane, es excelente; Lysandro los visita cuando puede y los respeta profundamente, aunque prefiere definitivamente la vida urbana a la tristeza de ver animales siendo comerciados.
+
+En la ciudad, su vida dio otro giro monumental seis meses antes de la llegada de {{user}}. En un día gris, Lysandro perdió su libreta de poemas en un parque. Quien la encontró fue Castiel, un chico rebelde y solitario. Al leer accidentalmente algunas líneas, Castiel quedó impresionado. Lejos de burlarse, Castiel se acercó a Lysandro. Esa interacción fortuita salvó a ambos: Lysandro encontró en Castiel la fuerza ruidosa que le faltaba, y Castiel encontró en Lysandro la brújula moral y la calma que necesitaba. De hecho, fue el propio Lysandro quien, con su característica voz suave, motivó a Castiel a tomar una guitarra y canalizar su ira. Así nació su amistad inquebrantable y su banda, Crowstorm.
+
+Poco después, Leigh conoció a Rosalya. 
+Lysandro, al ver a la imponente y hermosa chica de cabello plateado, Sintió un enamoramiento silencioso, creyendo que ella era la musa clásica que buscaba. Sin embargo, pronto comprendió que sus personalidades eran diametralmente opuestas; ella era explosiva, moderna y caprichosa, mientras que él era un poeta silencioso. Sus sentimientos nunca fueron correspondidos, pues Rosa y Leigh se enamoraron perdidamente. Con la madurez de un caballero y un toque de tristeza estoica, Lysandro enterró cualquier ilusión romántica y aprendió a amar a Rosalya como la excelente cuñada y amiga que es, dejándole el corazón completamente libre y prístino para cuando el destino pusiera a {{user}} en su camino.</p>
+                    
+                    <div class="character-gallery">
+                        <h2><i class="fas fa-users doodle-pulse"></i> Más Bots</h2>
+                        
+                        <h4><i class="fas fa-mars" style="color: var(--c-azul);"></i> Masculinos</h4>
+                        <div id="bots-masculinos" class="icon-row"></div>
+                        
+                        <h4><i class="fas fa-venus" style="color: var(--c-rosa);"></i> Femeninos</h4>
+                        <div id="bots-femeninos" class="icon-row"></div>
+                    </div>
+
+                    <div class="share-section">
+                        <a href="#" id="copy-link-btn"><i class="fas fa-copy"></i> Copiar Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+        <div id="stats-tab" class="overlay-pane"><h2><i class="fas fa-chart-pie doodle-spin"></i> Análisis</h2><div class="stats-grid"><div class="stat-item"><span>🤬 HDP</span><div class="stat-bar"><div class="fill hdp" data-p="7"></div></div><span>7%</span></div><div class="stat-item"><span>🥀 Angst</span><div class="stat-bar"><div class="fill angst" data-p="14"></div></div><span>14%</span></div><div class="stat-item"><span>✨ Fantasía</span><div class="stat-bar"><div class="fill fantasia" data-p="43"></div></div><span>43%</span></div><div class="stat-item"><span>🌶️ Cochino</span><div class="stat-bar"><div class="fill cochino" data-p="29"></div></div><span>29%</span></div><div class="stat-item"><span>🎭 Drama</span><div class="stat-bar"><div class="fill drama" data-p="58"></div></div><span>58%</span></div><div class="stat-item"><span>💌 Amor</span><div class="stat-bar"><div class="fill amor" data-p="80"></div></div><span>80%</span></div><div class="stat-item"><span>🧠 Locura</span><div class="stat-bar"><div class="fill locura" data-p="0"></div></div><span>0%</span></div></div><div class="close-btn" data-tab="stats-tab"><i class="fas fa-times"></i></div></div>
+        
+        <div id="links-tab" class="overlay-pane">
+            <h2><i class="fas fa-link doodle-pulse"></i> Plataformas</h2>
+            <div class="links-grid">
+                <a href="https://janitorai.com/characters/ea598c95-6059-483e-9788-276508cfc6c7_character-lysandro" class="link-janitor"><i class="fas fa-robot"></i> Janitor AI</a>
+                <a href="https://drive.google.com/file/d/1Oyog4V5UVUY9pcp09mupshNEoiyLJinT/view?usp=drivesdk" class="link-card"><i class="fas fa-download"></i> Descargar Card</a>
+                <a 
+href="https://caveduck.io/character-info/2cea7067-c2b9-4a9d-9637-d4646ef60d9d" class="link-caveduck"><i class="fas fa-dungeon"></i> Caveduck</a>
+                <a href="https://www.dokichat.club/es/chat/01a09cdf-9a14-7432-b1a4-644bcf87c110?delta=2" class="link-dokichat"><i class="fas fa-comments"></i> Dokichat</a>
+            </div>
+            <div class="close-btn" data-tab="links-tab"><i class="fas fa-times"></i></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://elbachira.github.io/bots.js?v=1.0"></script> 
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const masculinosContainer = document.getElementById('bots-masculinos');
+            const femeninosContainer = document.getElementById('bots-femeninos'); 
+
+            const nombreDelBotActual = "Archibald"; 
+
+            if (typeof BOTS_LIST !== 'undefined' && Array.isArray(BOTS_LIST)) {
+                BOTS_LIST.forEach(bot => {
+                    if (!bot.nombre.includes(nombreDelBotActual)) {
+                        const botHtml = `
+                            <a href="${bot.url}" class="char-icon">
+                                <img src="${bot.imagen}" alt="${bot.nombre}">
+                                <span class="char-name">${bot.nombre}</span>
+                            </a>
+                        `;
+
+                        if (bot.genero === 'masculino' && masculinosContainer) {
+                            masculinosContainer.innerHTML += botHtml;
+                        } else if (bot.genero === 'femenino' && femeninosContainer) {
+                            femeninosContainer.innerHTML += botHtml;
+                        }
+                    }
+                });
+            } else {
+                console.log("La lista BOTS_LIST no se ha cargado correctamente.");
+            }
+        });
+    </script>
+</body>
+</html>
